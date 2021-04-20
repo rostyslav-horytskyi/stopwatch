@@ -24,6 +24,7 @@ export const StopwatchNav = () => {
 
     if (clicks === 2) {
       clearInterval(interval);
+      setStart(false);
     }
   };
 
@@ -62,26 +63,14 @@ export const StopwatchNav = () => {
           Start
         </Button>
       )}
-      {/* <button onClick={() => {
-        createStopwatch(setNewInterval, seconds, setMinutes, setHours)
-          .subscribe(val => {setSeconds(val)});
-        }}
-      >
-        start
-      </button> */}
-
-      {/* <button onClick={() => {
-          stopStopwatch();
-        }}
-      >
-        stop
-      </button> */}
 
       <Button
         variant="contained"
         color="primary"
         className={classes.margin}
-        onClick={() => customDoubleClick()}
+        onClick={() => {
+          customDoubleClick();
+        }}
       >
         Wait
       </Button>
@@ -101,4 +90,4 @@ export const StopwatchNav = () => {
       </Button>
     </>
   );
-}
+};

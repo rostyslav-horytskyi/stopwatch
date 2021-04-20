@@ -29,5 +29,5 @@ export const StopwatchProvider =  ({children}) => {
     <StopwatchContext.Provider value={contextValue}>
       {children}
     </StopwatchContext.Provider>
-  )
-}
+  );
+};

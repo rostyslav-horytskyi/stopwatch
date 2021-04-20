@@ -13,4 +13,4 @@ export const StopwatchDisplay = () => {
       <div className="seconds">{seconds < 10 ? `0${seconds}`: seconds}</div>
     </div>
   );
-}
+};
