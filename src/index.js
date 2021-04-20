@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { StopwatchProvider } from './components/StopwatchContext';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StopwatchProvider>
     <App />
-  </React.StrictMode>,
+  </StopwatchProvider>,
   document.getElementById('root')
 );
 
