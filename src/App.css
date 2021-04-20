@@ -27,6 +27,7 @@ body {
 }
 
 .hours, .minutes, .seconds {
-  width: 160px;
+  width: 150px;
+  padding: 10px;
   text-align: left;
 }
