@@ -80,6 +80,7 @@ export const StopwatchNav = () => {
         color="secondary"
         className={classes.margin}
         startIcon={<Delete />}
+        disabled={!isStart}
         onClick={() => {
           stopStopwatch();
           createStopwatch(setNewInterval, 0)
